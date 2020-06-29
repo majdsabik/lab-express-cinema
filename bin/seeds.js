@@ -1,9 +1,11 @@
 // To insert in "bin/seeds.js"
-const mongoose = require('mongoose');
-const Movie = require('../models/Movie.model');
+const mongoose = require("mongoose");
+const Movie = require("../models/Movie.model");
 
-mongoose.connect('mongodb://localhost/Movies-Library', {
-  useNewUrlParser: true
+mongoose.connect("mongodb://localhost/Movies-Library", {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
 const movies = [

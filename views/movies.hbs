@@ -1,6 +1,7 @@
 <div>
-    <h1>Books</h1>
+    <h1>Movies</h1>
     {{#each movieList}}
-    <p></p><a href="/movies/{{_id}}">{{title}}</a></p>
+    <a href="/movies/{{_id}}"><img src="{{image}}" alt="{{title}} movie poster"></a>
+    <p></p><a href="/movies/:_id">{{title}}</a></p>
     {{/each}}
 </div>
